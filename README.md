@@ -8,13 +8,13 @@ This undergraduate research project asks whether New Zealand's tsunami early-war
 
 ## Purpose
 
-Deep-ocean data is scarce because putting instruments on the sea floor is costly and difficult. This project aims to improve its availability by **repurposing existing infrastructure**.
+Deep-ocean data is scarce due to the vastness of the ocean and the high cost of implmenting new instruments. This project aims to improve its availability by **repurposing existing infrastructure**.
 
-GeoNet's **DART** tsunami-warning network has 12 bottom pressure recorders on the sea floor around New Zealand, some nearly 6,000 m down. Each contains a sensor that monitors the temperature of its internal components. This project investigates whether that data can be repurposed as a measure of the surrounding deep-water temperature, which would create new historical datasets for fixed-location deep-ocean temperatures with no cost.
+GeoNet's **DART** tsunami-warning network has 12 bottom pressure recorders on the sea floor around New Zealand. Each contains a sensor that monitors the temperature of its internal components. This project investigates whether this data can be repurposed as a measurement for the surrounding deep-water temperature, which would create new historical datasets for fixed-location deep-ocean temperatures at no cost.
 
-## Discovery: a daily sinusoidal cycle
+## Discovery
 
-Each day's temperature shows a **clear sinusoidal pattern** mixed with hourly spikes. The spikes are consistent strength and likely caused by the some instrument related functionally. The sinusoidal pattern is present each day, but with varying strength. The sinoidal shape leads me to believe this is a natural pattern caused by the Earth's rotation and gravitational pull from the moon/sun, something similar to tidal forcing. This is the area, with the most promising potential for future study.
+Each day's temperature shows a clear **sinusoidal pattern** mixed with hourly spikes. These spikes appear in consistent strength and periods, and are likely a result of some functionailty related to the instruments. The sinusoidal pattern is present each day, but with varying strength. The sinoidal shape leads me to believe this is a natural pattern caused by the Earth's rotation and gravitational pull from the moon/sun, something similar to tidal forcing. This sinusoidal pattern is the most promising potential area for future study.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="figures/daily_cycle_dark.png">
@@ -23,31 +23,23 @@ Each day's temperature shows a **clear sinusoidal pattern** mixed with hourly sp
 
 Questions for further studies:
 
-- Does the the pattern strength over a yearly cycle as the **Sun's** gravitational pull varies, peaking in early January when Earth is closest to the Sun?
-- Does the pattern strength change over a monthly cycle as the **Moon's** gravitational pull varies, peaking during full and new moons?
-- How does the strength of the pattern compare between sensors and stations, does the pattern vary across **locations or instruments**?
+- Does the the pattern strength vary over a yearly cycle with the gravitational strength from the **Sun's**, peaking in early January when Earth is closest to the Sun?
+- Does the pattern strength change over a monthly cycle as the **Moon's** gravitational pull varies, do they peak with full and new moons?
+- How does the strength of the pattern compare between sensors and stations, does the pattern vary across **locations**?
 
 ## Limitations
 
-- **Wrong absolute values:** the sensor measures inside the housing, not the water, and reads about 0.1 °C warmer than nearby Deep Argo floats.
-- **Changes at each servicing:** every redeployment shifts the baseline unpredictably (up to about 1.5 °C), so each deployment would need its own calibration.
-- **Device heating:** event mode and deployment start-up both heat the sensor, and the effect lingers after they end.
-- **No sub-hourly data:** an hourly spike from the instrument itself makes readings below hourly resolution unreliable.
-- **Delayed data:** temperature isn't transmitted. It only becomes available when the unit is serviced, about every two years.
+- **Wrong absolute values:** Each sensor has a different base temperature measurement, including sensors at the same station location.
+- **Event mode:** Preassure spikes causes the sampling rate to increase resulting in greater heat for a fixed period.
+- **Sub-hourly data:** Lot of noisy data on a sub-hourly timescale from the base functionality of the instrument.
+- **Data avaliability** Temperature data is stored localy on the sensor and is only avaliable after maintaince, which is about every two years.
 
 ## Approach
 
 - Wrote a small client for the GeoNet API that pulls temperature, pressure and water-height records for all 12 stations and their sensors.
 - Detected and isolated periods when the device switched to rapid "event mode" sampling, and measured their effect on the temperature.
 - Checked reliability against Deep Argo floats, a trusted independent source, using `argopy`.
-- Compared sensors within and across stations, and searched for patterns at daily, monthly and yearly timescales.
-
-## Run it
-
-```bash
-pip install -r requirements.txt    # Python 3.11+
-jupyter notebook src/main.ipynb    # fetches data live from GeoNet and Argo
-```
+- Compared sensors within and across stations, and searched for natural patterns at daily, monthly and yearly timescales.
 
 ## Acknowledgements
 
