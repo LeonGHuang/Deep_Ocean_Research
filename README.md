@@ -14,18 +14,18 @@ GeoNet's **DART** tsunami-warning network has 12 bottom pressure recorders on th
 
 ## Discovery: a daily sinusoidal cycle
 
-Each day's temperature shows a **clear sinusoidal pattern** mixed with hourly spikes, spikes are consistent strength and likely caused by the some unknown instrument related functionally. The sinusoidal pattern is present each day, but with varying strength. The sinoidal shape leads me to believe this is a natural pattern caused by the Earth's rotation and gravitational pull from the moon/sun, something similar to tidal forcing. This is the area, with the most promising potential for future study.
+Each day's temperature shows a **clear sinusoidal pattern** mixed with hourly spikes. The spikes are consistent strength and likely caused by the some instrument related functionally. The sinusoidal pattern is present each day, but with varying strength. The sinoidal shape leads me to believe this is a natural pattern caused by the Earth's rotation and gravitational pull from the moon/sun, something similar to tidal forcing. This is the area, with the most promising potential for future study.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="figures/daily_cycle_dark.png">
   <img src="figures/daily_cycle_light.png" alt="Line chart of NZE sensor 40 temperature on 1 January 2020 (UTC). The 3-minute readings spike at the start of every hour. Their 1-hour average forms a smooth wave, rising from 1.2293 °C at midnight to about 1.2298 °C around 07:00–09:00, falling to about 1.2292 °C near 16:00, then climbing back to about 1.2299 °C by 23:00.">
 </picture>
 
-This suggests the sensors capture real *changes* in the deep ocean, even though their absolute readings are wrong. Promising next steps:
+Questions for further studies:
 
-- **Tidal harmonic analysis** over the full multi-year record, to check whether the signal matches lunar tidal periods (e.g. 12.42 h) or just a 24 h device cycle.
-- **Comparison with the pressure record**, which contains the local tide, to see whether the two move in step.
-- **Network-wide comparison**, since a real ocean signal should shift in timing between stations while a device artefact would not.
+- Does the the pattern strength over a yearly cycle as the **Sun's** gravitational pull varies, peaking in early January when Earth is closest to the Sun?
+- Does the pattern strength change over a monthly cycle as the **Moon's** gravitational pull varies, peaking during full and new moons?
+- How does the strength of the pattern compare between sensors and stations, does the pattern vary across **locations or instruments**?
 
 ## Limitations
 
