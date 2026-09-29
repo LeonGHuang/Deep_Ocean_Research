@@ -14,7 +14,7 @@ GeoNet's **DART** tsunami-warning network has 12 bottom pressure recorders on th
 
 ## Discovery: a daily sinusoidal cycle
 
-At 3-minute resolution, each day's temperature shows a **smooth sinusoidal wave** beneath a regular hourly spike caused by the instrument. The wave is tiny (under 0.001 °C) and its strength varies from day to day. Unlike the rest of the noise, it looks like a natural signal from outside the device, and its shape suggests tidal forcing.
+Each day's temperature shows a **clear sinusoidal pattern** mixed with hourly spikes, spikes are consistent strength and likely caused by the some unknown instrument related functionally. The sinusoidal pattern is present each day, but with varying strength. The sinoidal shape leads me to believe this is a natural pattern caused by the Earth's rotation and gravitational pull from the moon/sun, something similar to tidal forcing. This is the area, with the most promising potential for future study.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="figures/daily_cycle_dark.png">
