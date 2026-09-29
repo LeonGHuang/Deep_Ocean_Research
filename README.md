@@ -1,4 +1,4 @@
-# Repurposing the DART Network to Study the Deep Ocean
+# Repurposing DART Network to expand Deep Ocean Data Avaliability
 
 This undergraduate research project asks whether New Zealand's tsunami early-warning sensors can double as deep-ocean thermometers.
 
@@ -8,7 +8,7 @@ This undergraduate research project asks whether New Zealand's tsunami early-war
 
 ## Purpose
 
-Deep-ocean data is scarce due to the vastness of the ocean and the high cost of implmenting new instruments. This project aims to improve its availability by **repurposing existing infrastructure**.
+Deep-ocean data is scarce due to the vastness of the ocean and the high cost of implmenting new instruments. This project aims to improve deep ocean data visability through **repurposing existing infrastructure**.
 
 GeoNet's **DART** tsunami-warning network has 12 bottom pressure recorders on the sea floor around New Zealand. Each contains a sensor that monitors the temperature of its internal components. This project investigates whether this data can be repurposed as a measurement for the surrounding deep-water temperature, which would create new historical datasets for fixed-location deep-ocean temperatures at no cost.
 
