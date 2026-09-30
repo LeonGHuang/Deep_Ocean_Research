@@ -54,3 +54,6 @@ desktop.ini
 *.out
 *.synctex.gz
 *.toc
+
+# Agents
+AGENTS.md
