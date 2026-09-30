@@ -4,7 +4,7 @@ This undergraduate research project asks whether New Zealand's tsunami early-war
 
 **Stack:** Python · pandas · matplotlib · argopy · REST API (GeoNet) · Jupyter
 
-📄 **Full report:** [`research_report.pdf`](research_report.pdf)
+📄 **Full report:** [`Research_Report.pdf`](report/latex/Research_Report.pdf)
 
 ## Purpose
 
