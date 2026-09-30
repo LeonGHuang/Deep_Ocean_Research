@@ -46,3 +46,11 @@ desktop.ini
 
 # Logs
 *.log
+
+# LaTeX build files (*.log is covered above)
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
