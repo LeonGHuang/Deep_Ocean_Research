@@ -24,14 +24,14 @@ Each day's temperature shows a clear **sinusoidal pattern** mixed with hourly sp
 Questions for further study:
 
 - Does the pattern's strength vary over a yearly cycle with the **Sun's** gravitational pull, peaking in early January when Earth is closest to the Sun?
-- Does the pattern's strength change over a monthly cycle with the **Moon's** gravitational pull, is there is peak during full and new moons?
+- Does the pattern's strength change over a monthly cycle with the **Moon's** gravitational pull, is there a peak during full and new moons?
 - How does the pattern's strength compare between sensors and stations, and does it vary by **location**?
 
 ## Limitations
 
 - **Wrong absolute values:** Each sensor has a different base temperature measurement, including sensors at the same station location.
 - **Event mode:** Pressure spikes cause the sampling rate to increase, resulting in greater heat for a fixed period.
-- **Sub-hourly data:** Data below a hourly resolution are noisy due to some routine operation from the instrument.
+- **Sub-hourly data:** Data below an hourly resolution are noisy due to some routine operation from the instrument.
 - **Data availability:** Temperature data is stored locally on the sensor and is only available after maintenance, which is about every two years.
 
 ## Approach

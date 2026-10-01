@@ -1,7 +1,7 @@
 [project]
 name = "dart"
 version = "0.1.0"
-description = "Undergraduate research project: expanding deep-sea temperature visibility through re-purposing existint GeoNet's DART infrastructure"
+description = "Undergraduate research project: expanding deep-sea temperature visibility through re-purposing existing GeoNet's DART infrastructure"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
