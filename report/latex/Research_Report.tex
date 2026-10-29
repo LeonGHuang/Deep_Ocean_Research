@@ -46,6 +46,7 @@
 \renewcommand{\refname}{List of References}
 \renewcommand{\bibsection}{\section{\refname}} % also lists it in the TOC
 \setlength{\bibhang}{0.5cm}
+\setlength{\bibsep}{3pt}
 
 % Dotted leaders for top-level TOC entries too
 \makeatletter
@@ -77,8 +78,7 @@
 \clearpage
 
 % --- original p. 2
-\phantomsection
-\addcontentsline{toc}{section}{\contentsname} % the original lists itself
+
 {\setstretch{1.6}\tableofcontents}
 \clearpage
 
@@ -310,11 +310,11 @@ weather \citep{niwa2008}.
 
 \section{Objectives and Methods}
 
-GeoNet is New Zealand's national geohazard monitoring organisation, one of
+GeoNet is New Zealand's national geohazard monitoring organisation. One of
 their monitoring systems is the DART network, an early tsunami detection
 system. It does this through a device at the bottom of the ocean floor that
 detects sudden changes in pressure, additionally it also has an internal
-temperature recorder. My research supervisor, Melissa Bowen (2025), was first
+temperature recorder. My research supervisor, Melissa Bowen (2025), was the first
 to notice that the temperature data was mislabelled, it was listed as water
 temperature when the sensor was placed inside the housing unit, and did not
 have direct contact with water. The objective of my research project is to
@@ -443,8 +443,7 @@ formed.
 
 Figure~\ref{fig:first-7-days} shows the first 7 days of temperature and
 height data revealing a negligible difference in height throughout the 7
-days. Though height peaked at the start, the range of height was less than
-2m, nowhere near the amount needed for this degree of change in temperature.
+days. Though height peaked at the start, the range of height was less than 2 m, nowhere near the amount needed for this degree of change in temperature.
 This temperature spike is likely related to the testing or set-up process of
 the device, rather than a temperature difference due to different layers of
 the ocean.
@@ -475,7 +474,7 @@ manual trigger of the event mode fixed it.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.58\textwidth]{fig05_july_2021_anomaly}
-  \caption{Mysterious increase in temperature on 9 July 2021}
+  \caption{Unexplained increase in temperature on 9 July 2021}
   \label{fig:july-2021-anomaly}
 \end{figure}
 
@@ -576,15 +575,13 @@ Table~\ref{tab:nze-locations}, a simple Pythagoras calculation can be done.
 Sensor 40 and sensor 41 were placed about 1 km apart with sensor 41 being
 elevated 2 m higher. Considering the vastness of the ocean and the stability
 of deep ocean temperatures, it is highly unlikely that a 1 km displacement
-would cause a 0.10°C change in temperature. It is
-more likely that some change in the equipment, be it the main components or
-the temperature sensor itself.
+would cause a 0.10°C change in temperature. It is more likely that a change in the equipment, either the main components
+or the temperature sensor itself, caused the difference.
 
 \newpage % --- original p. 16
 
-Figure~\ref{fig:station-sensors} examines the temperature data across all
-sensors from every station, a shift in temperature occurs after every
-maintenance. Some stations experienced similar increases in temperatures,
+Figure~\ref{fig:station-sensors} examines the temperature data across all sensors from every station. A shift
+in temperature occurs after every maintenance. Some stations experienced similar increases in temperatures,
 others experienced a decrease in temperatures, some looked to have no
 significant change, while station NZJ nearly had a 2°C jump in temperature.
 All the maintenance seems to have been done at three distinct points in time,
@@ -611,7 +608,7 @@ recalibrate each sensor's data to an accurate norm.
 \subsection{Data reliability \& Argo Data}
 
 Having examined the datasets, I next assessed their reliability in comparison
-to other, more well-known data sources. From the deep Argo data, there are
+to other, more well-known data sources. From the Deep Argo data, there are
 some data points that are close to the location and depth of the station that
 can be used. Comparing the available data points to the GeoNet data in
 Figure~\ref{fig:argo-vs-dart} shows a clear disparity between the two. The
@@ -678,7 +675,7 @@ data could yield very interesting results.
 
 \newpage % --- original p. 19
 
-Examining the data on a yearly time-scale, I found no discernible patterns. I
+Examining the data on a yearly timescale, I found no discernible patterns. I
 specifically searched for yearly seasonal variations and monthly lunar
 variations. Considering the gravitational pull theory suggested when
 discussing the diurnal variation. The lack of patterns could suggest that the
@@ -696,15 +693,15 @@ gravitational pull on deep ocean temperatures.
 \section{Conclusion}
 
 The DART Network temperature data from GeoNet contains a significant amount
-of noise and requires extensive processing to be useful. Such as the
-triggering of event mode, causing the temperature to rise. The temperature
+of noise and requires extensive processing to be useful. For example the
+triggering of event mode, causes the temperature to rise for a perio of time. The temperature
 spike at the beginning of the datasets is likely caused by the initiation after
 deployment, and not temperature recording during the descent. Additionally,
 there is an unexplained anomaly on station NZE sensor 40 starting on the 9 
 July 2021. Using the data below an hourly resolution would need further work 
 in understanding the inner software of the device.
 
-The similar data range to the deep Argo data gives prospects for the dataset.
+The similar data range to the Deep Argo data gives prospects for the dataset.
 A similar data range could indicate that the dataset can be used to detect
 temperature changes despite having different direct measurements; further
 work is needed to understand the origin of the temperature in the device. The
@@ -717,6 +714,7 @@ sinusoidal pattern.
 \clearpage
 
 % --- original p. 20
+{\setstretch{1.05}
 \begin{thebibliography}{13}
 
 \bibitem[Argo(2025)]{argo2025}
@@ -824,5 +822,6 @@ salinity distribution by the water cycle. \emph{Journal of Climate, 28}(24),
 % \url{https://rwu.pressbooks.pub/webboceanography/chapter/8-1-earths-heat-budget/}
 
 \end{thebibliography}
+}
 
 \end{document}
